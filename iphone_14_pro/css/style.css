@@ -1,0 +1,301 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header {
+    background-color:  #0A0A0A;
+    padding: 33px 0 33px;
+    color: #717171;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #0A0A0A;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.menu-item {
+    padding-right: 30px;
+    /* чтоб ссылки друг от друга отступили */
+}
+
+.menu-link,
+.phone {
+    font-size: 24px;
+    line-height: 29px;
+}
+/* можно и в header записать */
+
+.phone {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: right; 
+    font-size: 24px;
+    line-height: 29px;
+}
+ /* чтоб ссылка ушла вправо */
+
+.iphon-pick {
+    background-color: #F5F5F7;
+    text-align: center;
+    padding: 70px 0 40px;
+}
+
+.title {
+    text-transform: uppercase;
+    margin: 0 0 40px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: #490E84;
+}
+
+.iphon-img {
+    margin-bottom: 25px;
+    /* чтоб яблоко было строго по центру */
+}
+
+.iphon-button {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background-color: #490E84;
+    padding: 22px 117px 19px;
+    border-radius: 30px;
+    /* кнопку-ссылку задала padding */
+}
+
+.new-title,
+.color-title {
+    text-transform: uppercase;
+    padding: 91px 0 50px; 
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #717171;
+}
+
+.new-info {
+    display: flex;
+    align-items: center;
+}
+
+.new-info__text  p {
+    margin: 0 0 30px ;
+    max-width: 560px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.new-info__text  b {
+    max-width: 560px;
+    font-size: 20px;
+    line-height: 26px;
+    display: block;
+}
+
+.new-info__iphone {
+    margin-left: 190px;
+}
+
+.color {
+    padding-bottom: 150px;
+}
+
+.color-list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* как вот меню в хедере */
+}
+
+.color-item img {
+    margin-bottom: 20px;
+}
+
+.color-item h3 {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 10px;
+}
+
+.color-item p {
+    margin: 0 ;
+}
+
+.contacts-inner {
+    display: flex;
+    background-color: #574B63;
+    color: #FFFFFF;
+}
+
+.contacts-form {
+    width: 100%;
+    padding: 140px 92px;
+    text-align: center;
+}
+
+.contacts-title {
+    margin: 0 0 60px;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.contacts-input {
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #574B63;
+}
+
+.contacts-input::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    /*переопределила input и placeholder от body они не наследуются*/
+}
+
+.contacts-form p {
+    opacity: 0.5;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.contacts-form button {
+    border: none;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    color: #490E84;
+    border-radius: 30px;
+    padding: 16px 81px; 
+    font-weight: 700px;
+    font-size: 14px;    
+}
+
+.footer {
+    background-color: #0A0A0A;
+}
+
+.footer-link {
+    flex-grow: 1;
+    padding-right: 150px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.footer-inner {
+    color: #717171;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0; 
+}
+
+/* @media screen and (max-width: 768px) and (min-width: 320px) {
+    .iphon-img {
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .iphon-button {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 16px 90px;
+    }
+
+     .iphon-pick {
+        padding: 70px 0 40px;
+    } 
+
+    .new-info__iphone {
+        display: none;
+    }
+    
+    .new-info__text p,
+    .new-info__text b {
+        max-width: 100%;
+    }
+
+    .new-title, 
+    .color-title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .color-list {
+        flex-wrap: wrap;
+    }
+
+    .color-item {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .contacts {
+        background-color: #574B63;
+    }
+
+    .contacts-inner {
+        display: block;
+    }
+
+    .contacts-form {
+        width: auto;
+    }
+
+    .contacts-img {
+        width: 100%;
+       
+    }
+    .color-title,
+    .new-title {
+        padding: 30px 0 30px;
+    }
+    .color {
+        padding-bottom: 90px;
+    } 
+      
+} */
