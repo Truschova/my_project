@@ -1,0 +1,115 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #424242;
+}
+
+.container-nav {
+    width: 1400px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+
+.nav {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #D6D6D6;;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    margin: 0 35px 0 35px;
+   
+}
+
+.link-nav ul {
+    display: flex;
+    padding-left: 35px;
+}
+
+.link-nav li + li {
+    margin-left: 70px;
+}
+
+.link-nav a {
+    font-size: 20px;
+    line-height: 24px;
+    color: #292929;
+}
+
+.link-nav a {
+    transition: color 0,2s ease;
+}
+
+.link-nav a:hover {
+    color: #01996D;
+}
+
+.login-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+   
+}
+.link-nav__item {
+    color: #000000;
+}
+
+.link-nav__btn {
+    padding: 13px 50px;
+    text-decoration: none;
+    color: white;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+.container-headline {
+    /* background-image: url('images/img-headline'); */
+    height: 895px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    padding-left: 60px;
+    background-color: blanchedalmond;
+}
+
+.heading-headline {
+    padding-top: 140px;
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 74px;
+    color: #01996D;
+}
+
+.text-headline {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 144.5%;
+    color: #484848;
+}
+
+.headline-btn {
+    box-sizing: border-box;
+    padding: 20px 50px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+    color: #FFFFFF;
+}
