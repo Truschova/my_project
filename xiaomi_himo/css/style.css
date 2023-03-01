@@ -102,15 +102,17 @@ p {
   width: 420px;
   margin-bottom: 20px;
   font-weight: 400;
-  font-size: 14px;
   line-height: 120%;
   color: #131313;
 }
 
 .bike__link {
   margin-top: 80px;
-  display: inline-block;
-  padding: 28px 81px;
+  padding-left: 95px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  text-align: center;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -218,7 +220,6 @@ p {
 .specification__item-text {
   max-width: 460px;
   font-weight: 400;
-  font-size: 14px;
   line-height: 17px;  
   color: #131313;  
 }
@@ -253,7 +254,6 @@ p {
   width: 656px;
   padding: 2px 0 3px;
   font-weight: 700;
-  font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
   background-color: #131313;
@@ -310,7 +310,6 @@ p {
   width: 300px;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 14px;
   line-height: 17px;
 }
 
@@ -327,7 +326,6 @@ p {
 .price__input::placeholder,
 .label__text {
   font-weight: 400;
-  font-size: 14px;
   line-height: 17px;
   color: #6F6F6F;
   opacity: 0.5;
